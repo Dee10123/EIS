@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s linear;
+}
+
+
+:root {
+    --blue: #1c29dd;
+}
+
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+
+section {
+    padding: 2rem 9%;
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: transparent;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    
+}
+
+header .logo {
+    font-size: 3rem;
+    color: #ffffff;
+    font-weight: bolder;
+}
+
+header .logo span {
+    color: var(--blue);
+}
+
+header .navbar a {
+    font-size: 15px;
+    padding: 0 1.5rem;
+    color: #ffffff;
+    font-weight: 600;
+    text-shadow: 4px 4px black;
+}
+
+header .navbar a:hover {
+    color: var(--blue);
+}
+
+header .icons a {
+    font-size: 2.5rem;
+    color: #333;
+    margin-left: 1.5rem;
+}
+
+header .icons a:hover {
+    color: #2f6ef7;
+}
+
+header #toggler {
+    display: none;
+}
+
+header .fa-bars {
+    font-size: 3rem;
+    color: #333;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+    border: 0.1rem solid rgba(0, 0, 0, 0.3);
+    display: none;
+} 
+
+     
+
+.login-box {
+width: 400px;
+padding:20px ;
+background: #fff;
+text-align: center;
+border-radius: 8px;
+
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-box {
+    width: 400px;
+    padding: 20px;
+    backdrop-filter: blur(6px) ;
+    border: 1px solid white;
+    background: transparent; 
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: auto;
+}
+
+.textbox {
+    margin: 0 0 20px;
+    padding: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+  
+    
+}
+.textbox input {
+width: 100%;
+padding: 10px;
+margin: 5px 0;
+border: 1px solid #ccc;
+border-radius: 5px;
+}
+
+.select-box {
+margin: 0 0 20px;
+padding: 0;
+}
+
+.select-box select {
+width: 100%;
+padding: 10px;
+margin: 5px 0;
+border: 1px solid #ccc;
+border-radius: 5px;
+font-family:time new roman;
+}
+
+.btn {
+background: #1877f2;
+color: #fff;
+border: none;
+padding: 10px;
+border-radius: 5px;
+cursor: pointer;
+font-weight: bold;
+padding-bottom:10px;
+
+margin-left:5px;
+margin-bottom:7px;
+}
+
+.btn:hover {
+background: red;
+padding: 11px;
+
+
+}
+
+a {
+text-decoration: none;
+color: #1877f2;
+font-weight: bold;
+}
+
+a:hover {
+text-decoration: underline;
+}
+
+.select-box {
+display: flex;
+
+padding-left:10px;
+}
+
+
+
+.select-box {
+display: flex;
+justify-content: center;
+}
+
+
+select {
+padding: 10px;
+border: 2px solid #ccc;
+border-radius: 5px;
+background-color: white;
+color: #333;
+font-size: 16px;
+outline: none;
+cursor: pointer;
+max-width: 40%;
+
+}
+
+
+select:focus {
+outline: none;
+box-shadow: 0 0 5px rgba(0, 123, 255, 0.7);
+}
+
+.textbox {
+position: relative;
+}
+
+.textbox input {
+padding-left: 30px;
+}
+
+
+.textbox input::placeholder {
+font-family: 'Font Awesome 5 Free';
+content: attr(placeholder);
+color: gray;
+position: absolute;
+left: 50%;
+transform: translateX(-50%);
+}

@@ -1,0 +1,625 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s linear;
+    background: transparent;
+}
+
+/* Root Variables */
+:root {
+    --blue: #1c29dd;
+}
+
+    /* Employee List Styles */
+/* CSS for the Employee List table */
+
+html {
+    font-size: 85.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    padding: 50px;
+    
+}
+
+#employeelist {
+    margin-top: 10px;
+    margin: 20px;
+    padding: 20px;
+    background:transparent;
+    backdrop-filter: blur(2px);
+    color: rgb(255, 255, 255);
+    border: 2px solid rgba(255,255,255, .2);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+
+
+#employeelist h3 {
+    font-size: 24px;
+    color: #007BFF; /* Change the color as needed */
+    margin: 0;
+    padding: 10px 0;
+    border-bottom: 2px solid #007BFF; /* Underline effect */
+}
+
+#employeelist table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color:transparent;
+}
+
+#employeelist table th {
+    background-color: black; /* Header background color */
+    color: #fff;
+    font-weight: bold;
+    text-align: left;
+    padding: 10px;
+}
+
+#employeelist table th, #employeelist table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+#employeelist table tr:nth-child(odd) {
+    background: rgb(255, 255, 255); /* Background color for odd rows */
+    color: rgb(0, 0, 0); /* Reset text color for odd rows */
+}
+
+#employeelist table tr:nth-child(even) {
+    background:rgb(255, 255, 255) solid; /* Background color for even rows */
+    color: rgb(0, 0, 0); /* Reset text color for even rows */
+}
+
+
+
+#employeelist table td a {
+    color: #007BFF; /* Link color */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#employeelist table td a:hover {
+    text-decoration: underline;
+
+
+}
+
+/* Global Styles */
+html {
+    font-size: 75.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+
+section {
+    padding: 2rem 9%;
+}
+
+/* Header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: transparent;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    font-size: 3rem;
+    color: #000000;
+    font-weight: bolder;
+}
+
+header .logo span {
+    color: var(--blue);
+}
+
+header .navbar a {
+    font-size: 21px;
+    padding: 0 1.5rem;
+    color: #fefefe;
+    font-weight: 600;
+}
+
+header .navbar a:hover {
+    color: var(--blue);
+}
+
+header .icons a {
+    font-size: 2.5rem;
+    color: #575555;
+    margin-left: 1.5rem;
+}
+
+header .icons a:hover {
+    color: #2f6ef7;
+}
+
+header #toggler {
+    display: none;
+}
+
+header .fa-bars {
+    font-size: 3rem;
+    color: #333;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+    border: 0.1rem solid rgba(0, 0, 0, 0.3);
+    display: none;
+}
+
+/* Login Popup Styles */
+.login-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+}
+/* Employee List Styles */
+section#employeelist {
+    padding: 20px;
+}
+
+h3 {
+    font-size: 24px;
+    color: #007BFF; /* Change the color as needed */
+    margin: 0;
+    padding: 10px 0;
+    border-bottom: 2px solid #007BFF; /* Underline effect */
+}
+
+section#employeelist {
+    padding: 20px;
+}
+
+h3 {
+    font-size: 24px;
+    color: #007BFF;
+    margin: 0;
+    padding: 10px 0;
+    border-bottom: 2px solid #007BFF;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #e61414; /* Background color for the entire table */
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #007BFF;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(242, 242, 242, 0.8); /* Alternate row background color with transparency (adjust the alpha value) */
+}
+
+tr:hover {
+    background-color: rgba(221, 221, 221, 0.8); /* Hover color with transparency (adjust the alpha value) */
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Alternate row background color */
+}
+
+tr:hover {
+    background-color: #ddd; /* Hover color */
+}
+
+
+.login-box {
+    width: 400px;
+    padding: 20px;
+    background: #fff;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-box h2 {
+    margin: 0 0 20px;
+    padding: 0;
+    font-size: 24px;
+}
+
+.textbox {
+    margin: 0 0 20px;
+    padding: 0;
+    padding-left: 20px;
+    padding-right: 60px;
+}
+
+.textbox input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.select-box {
+    margin: 0 0 20px;
+    padding: 0;
+}
+
+.select-box select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn {
+    background: #1877f2;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #166fe5;
+}
+
+.login-popup a {
+    color: #1877f2;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-popup a:hover {
+    text-decoration: underline;
+}
+
+.select-box {
+    display: flex;
+    padding-left: 10px;
+}
+
+.select-box select {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    color: #333;
+    font-size: 16px;
+    outline: none;
+    cursor: pointer;
+    max-width: 40%;
+}
+
+.select-box select:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.7);
+}
+
+.textbox {
+    position: relative;
+}
+
+.textbox input {
+    padding-left: 30px;
+}
+
+.textbox input::placeholder {
+    font-family: 'Font Awesome 5 Free';
+    content: attr(placeholder);
+    color: gray;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Header styles */
+header {
+    background-color: white;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.logo {
+    background:white;
+    font-size: 24px;
+    color: rgb(0, 0, 0);
+}
+
+.logo span {
+    color: #ff6f61;
+}
+
+.navbar a {
+    color: #000000;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+/* Form container styles */
+div {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form h3 {
+    margin: 0;
+    padding: 10px 0;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form input[type="date"],
+form input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form input[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Add hover effect for the submit button */
+form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+/* Add Employee heading style */
+h3 {
+    font-size: 24px;
+    color: #007BFF; /* Change the color as needed */
+    margin: 0;
+    padding: 10px 0;
+    border-bottom: 2px solid #007BFF; /* Underline effect */
+}
+
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+background: url('https://static.vecteezy.com/system/resources/previews/006/430/145/original/technology-background-concept-circuit-board-electronic-system-futuristic-hi-tech-light-on-dark-blue-free-vector.jpg') no-repeat;
+}
+
+/* Header styles */
+header {
+    background-color: white;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.logo {
+    background:while;
+    font-size: 24px;
+    color: white;
+}
+
+.logo span {
+    color: #ff6f61;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+/* Form container styles */
+div {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #fefefe;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form h3 {
+    margin: 0;
+    padding: 10px 0;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #ccc;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form input[type="date"],
+form input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    
+    background-color: #ccc;
+}
+
+form input[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Add hover effect for the submit button */
+form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+/* Add Employee heading style */
+h3 {
+    font-size: 24px;
+    color: #007BFF; /* Change the color as needed */
+    margin: 0;
+    padding: 10px 0;
+    border-bottom: 2px solid #007BFF; /* Underline effect */
+}
+.logout-button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    position: fixed;
+    top:20px;
+    right:30px; 
+    
+}
+
+.logout-button a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Add hover effect for the button */
+.logout-button:hover {
+    background-color: #0056b3;
+}
+
+
+.vertical-search-bar {
+    display: inline-block;
+    margin-right: 10px; /* Add some spacing between search bars */
+   
+
+}
+
+
+.vertical-search-bar input {
+    display: inline-block; /* Display label and input in one line */
+    vertical-align: middle; /* Align label and input vertically */
+    font-size: 14px;
+    color: #333;
+}
+
+.vertical-search-bar input {
+    padding: 5px;
+    border: 1px solid #000000;
+    border-radius: 8px;
+
+}
+
+.vertical-search-bar inpu:focuts {
+    outline: none;
+    border-color: #e82bce;
+}
+
+.vertical-search-bar input::placeholder {
+    color: #999;
+}
+
+.vertical-search-bar input:-webkit-autofill,
+.vertical-search-bar input:-webkit-autofill:focus {
+    box-shadow: 0 0 0 30px white inset;
+}
+
+.vertical-search-bar input:hover {
+    border-color: #d47575;
+}
+/* Media query for screens with a maximum width of 768px */
+@media (max-width: 768px) {
+    /* Add your responsive styles here */
+    div {
+        max-width: 100%;
+        margin: 0;
+        padding: 10px;
+    }
+
+    form {
+        padding: 10px;
+    }
+
+    form input[type="text"],
+    form input[type="email"],
+    form input[type="tel"],
+    form input[type="date"],
+    form input[type="number"] {
+        width: 100%;
+    }
+
+    /* Additional responsive styles as needed */
+}
+
+/* Media query for screens with a maximum width of 480px (typical mobile devices) */
+@media (max-width: 480px) {
+    /* Add your responsive styles here */
+    div {
+        max-width: 100%;
+        margin: 0;
+        padding: 10px;
+    }
+
+    form {
+        padding: 10px;
+    }
+
+    form input[type="text"],
+    form input[type="email"],
+    form input[type="tel"],
+    form input[type="date"],
+    form input[type="number"] {
+        width: 100%;
+    }
+
+    /* Additional responsive styles as needed */
+}
